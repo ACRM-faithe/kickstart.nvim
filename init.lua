@@ -58,6 +58,8 @@ require('lazy').setup({
   --
   -- Use `opts = {}` to force a plugin to be loaded.
   --
+  'https://github.com/tpope/vim-surround',
+  --
   'nvim-java/nvim-java',
   {
     'ThePrimeagen/harpoon',
@@ -99,6 +101,9 @@ require('lazy').setup({
     event = 'VeryLazy',
     opts = {
       -- add any options here
+      status = {
+        mode = showmode,
+      },
       lsp = {
         -- override markdown rendering so that **cmp** and other plugins use **Treesitter**
         override = {
