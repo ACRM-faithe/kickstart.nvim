@@ -92,7 +92,16 @@ require('lazy').setup({
   -- Then, because we use the `config` key, the configuration only runs
   -- after the plugin has been loaded:
   --  config = function() ... end
+  {
+    'OXY2DEV/markview.nvim',
+    lazy = false,
 
+    -- For blink.cmp's completion
+    -- source
+    -- dependencies = {
+    --     "saghen/blink.cmp"
+    -- },
+  },
   { import = 'config' },
 
   'MunifTanjim/nui.nvim',
